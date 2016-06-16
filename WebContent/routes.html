@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Routes Example</title>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css"
+rel="stylesheet" />
+
+<script type="text/javascript"
+src ="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/routes.js"></script>
+</head>
+<body  onload="initialize()">
+<div>
+<strong>Start:</strong>
+<select id="start" onchange="calcRoute();">
+<option value="Tampico,Tamaulipas, Mexico "> Tampico</option>
+<option value="Mexico City,Distrito Federal, Mexico"> Mexico City</option>
+<option value="Veracruz, vercruz-Llave, Mexico"> Veracruz</option>
+<option value="San Luis Potosí, San Luis Potosí, Mexico "> San Luis Potosi</option>
+<option value="Monterrey,Monterrey-Llave, Mexico "> Monterrey</option>
+<option value="Campeche, Campeche, Mexico "> Campeche</option>
+<option value="Tabasco,Tabasquillo, Mexico ">Tabasco</option>
+<option value="Oaxaca,Oaxaca, Mexico ">Oaxaca</option>
+
+</select>
+<strong>End:</strong>
+<select id="end" onchange="calcRoute();">
+<option value="Tampico, Tamaulipas, Mexico"> Tampico</option>
+<option value="Mexico City, Distrito federal, Mexico"> Mexico City</option>
+<option value="Veracruz, Veracruz-Llave, Mexico"> Veracruz</option>
+<option value="San_Luis_Potosí, San_Luis_Potosí, Mexico"> San Luis Potosi</option>
+<option value="Monterrey, Monterry, Mexico, "> Monterrey</option>
+<option value="Campeche, Campeche, Mexico "> Campeche</option>
+<option value="Tabasco,Tabasquillo, Mexico ">Tabasco</option>
+<option value="Oaxaca,Oaxaca, Mexico ">Oaxaca</option>
+</select>
+</div>
+<h3 >Distance: <strong id="distance">0</strong> Km. Meses <strong id="meses">0</strong> Robot <strong id="robot">0</strong>
+totalRobot <strong id="totalrobot">0</strong>
+totalkm <strong id="totalkm">0</strong> </h3>
+<div id="map-canvas" style="width: 600px; height: 600px" ></div>
+
+ 
+
+
+</body>
+</html>
